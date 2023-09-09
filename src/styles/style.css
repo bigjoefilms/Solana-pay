@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f7fafc;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 91 / var(--tw-border-opacity));
+}
+
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-fuchsia-500 {
+  --tw-gradient-to: #d946ef var(--tw-gradient-to-position);
+}
+.bg-clip-text {
+  background-clip: text;
+}
+.text{
+  font-size: 48px;
+  font-weight: 700;
+  font-size: bold;
+  display: flex;
+
+
+}
+.text-transparent {
+  color: transparent;
+}
+button{
+  color: white;
+  background-color: #6366f1;
+  padding: 20px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+.discon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #6366f1;
+  padding:8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+.discon span{
+  font-size: 10px;
+  color: rgb(105, 193, 87);
+}
+.img{
+  margin-top:20px ;
+}
+.image{
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+span{
+  font-size: 20px;
+  font-weight: 600;
+}
+button:hover{
+  opacity: 0.9;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+}
+.svg{
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+.via{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.trans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background-color:rgb(175, 225, 165) ;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 24px 24px 0;
+}
+.err{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background-color:rgb(229, 111, 111) ;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 24px 24px 0;
+  color: white;
+  
+}
+input{
+  height: 45px;
+  padding: 0 15px 0 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  width: 300px;
+  border-radius: 6px;
+}
+.connect{
+  color: white;
+  background-color: #6366f1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  
+  cursor: pointer;
+
+}
+
+.connect:hover{
+  opacity: 0.9;
+}
+.relative{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
