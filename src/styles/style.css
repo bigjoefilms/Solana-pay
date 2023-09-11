@@ -1,23 +1,131 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #f7fafc;
+  font-family: 'Jost', sans-serif;  background-color: rgb(255, 255, 255);
+}
+.bac{
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+.hea{
+  font-size: 20px;
+  font-weight: 600;
+
+}
 
 * {
   box-sizing: border-box;
+}
+.conta{
+   margin-left: 94px;
+  
+  
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.flex{
+  flex: 1;
+}
+.co{
+  font-size: 40px;
+  font-weight: 500;
+  
+}
+
+.cover{
+  background-color: #6366f1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  top: 0;
+
+}
+.rela{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -500px;
+
+
+ 
+}
+.cau{
+  background-color: #fbeded;
+  color: #f47373;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pop{
+ z-index: 100;
+  height: 100%;
+  max-height: 500px;
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border: 2px solid black;
+ 
+}
+.container{
+ 
+  font-size: 30px;
+  
+  font-weight: 400;
+ 
+  display: flex;
+ 
+}
+.line{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+.in{
+  cursor: pointer;
+}
+.im{
+
+align-items: center;
+display: flex;
+justify-content: center;
+  
+  
+}
+.cntbtn{
+  padding: 10px 15px;
+  background-color: #6366f1;
+
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 24px;
+}
+
+.cntbtn:hover{
+  opacity: 0.9;
+
 }
 main{
   display: flex;
@@ -28,8 +136,18 @@ main{
 }
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+ border: 2px solid black;
+   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+   margin-bottom: 20px;
+   padding: 10px;
+  
   
 }
+
+.bac{
+  margin-top: 50px;
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -48,14 +166,20 @@ main{
   --tw-gradient-to: #d946ef var(--tw-gradient-to-position);
 }
 .bg-clip-text {
-  background-clip: text;
+    background-clip: text;
 }
+
 .text{
   font-size: 48px;
   font-weight: 700;
   font-size: bold;
   display: flex;
 
+
+
+}
+.input{
+  /* margin: 0 24px 0 24px; */
 
 }
 .text-transparent {
@@ -65,7 +189,9 @@ button{
   color: white;
   background-color: #6366f1;
   padding: 20px 15px;
-  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid black;
+  
   cursor: pointer;
 
 }
@@ -74,6 +200,7 @@ button{
   flex-direction: column;
   align-items: center;
   color: white;
+  
   background-color: #6366f1;
   padding:8px 15px;
   border-radius: 8px;
@@ -88,7 +215,7 @@ button{
   margin-top:20px ;
 }
 .image{
-  padding-left: 10px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -99,10 +226,28 @@ span{
 }
 button:hover{
   opacity: 0.9;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  color: black;
 }
 .input{
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.sol{
+  color: #818384;
+  position: absolute;
+  right: 0;
+  
+  padding-top: 15px;
+  padding-right: 24px;
+
+}
+.usd{
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 .svg{
   cursor: pointer;
@@ -112,6 +257,9 @@ button:hover{
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
+  height: 80px;
+  background-color: white;
+  border: 2px solid black;
 }
 .via{
   display: flex;
@@ -145,13 +293,27 @@ button:hover{
   color: white;
   
 }
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 input{
-  height: 45px;
-  padding: 0 15px 0 10px;
+  height: 55px;
+  padding: 0 15px 0 15px;
   font-size: 16px;
   border: 1px solid black;
-  width: 300px;
+  width: 100%;
+  
+  min-width: 460px;
+  
   border-radius: 6px;
+}
+.input{
+  margin: 0 20px 0 20px;
+
 }
 .connect{
   color: white;
@@ -162,13 +324,112 @@ input{
   cursor: pointer;
 
 }
+.you{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.confirm{
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 24px;
+  align-items: center;
+  flex-direction: column;
+
+}
+.nob{
+  font-size: 20px;
+  font-weight: 600;
+  color: #6366f1;
+}
+.bt{
+  display: flex;
+  align-items: center;
+}
+.payment{
+ font-size: 38px;
+ font-weight: 700;
+ /* color:#6366f1; */
+ display: flex;
+
+}
+span{
+  font-size: 30px;
+}
+.circle{
+  background-color: #92f9b1;
+  border: red;
+    /* background-color: #FFFFFF; */
+    height: 100px;
+   border-radius: 75px;
+    width: 100px;
+    border: 10px solid #bdfccf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  .animated-element {
+   
+    animation: moveUpDown 1.3s ease-in-out infinite alternate;
+  }
+  
+  /* Keyframes for moving up and down animation */
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust the distance it moves up */
+    }
+  }
 
 .connect:hover{
   opacity: 0.9;
 }
 .relative{
   display: flex;
+
   justify-content: center;
   align-items: center;
   color: black;
+}
+@media screen and (max-width: 935px) {
+ .conta{
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 40px;
+ 
+
+ }
+ .container{
+  font-size: 20px;
+ }
+ .im{
+  display: none;
+ }
+ .cntbtn{
+  width: 150px;
+ }
+ .text{
+  font-size: 30px;
+ }
+ .rela{
+ 
+  margin-top: -300px;
+
+
+ 
+}
+.butt{
+  font-size: 13px;
+}
+input{
+  width: 100%;
+  
+  min-width: 360px;
+}
+
 }
