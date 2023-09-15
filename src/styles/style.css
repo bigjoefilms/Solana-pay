@@ -7,7 +7,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Jost', sans-serif;  background-color: rgb(255, 255, 255);
+  
+ 
+  font-family: 'Jost', sans-serif;  background-color: #ffffff;
 }
 .bac{
   cursor: pointer;
@@ -23,9 +25,27 @@ a {
   text-decoration: none;
 }
 .hea{
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
 
+}
+.balance{
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  gap: 5px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #6366f1;
+ 
+  color: white;
+  
+}
+.bal{
+ display: flex;
+ align-items: center;
+
+ justify-content: center;
 }
 
 * {
@@ -35,7 +55,7 @@ a {
    margin-left: 94px;
   
   
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     align-items: center;
 }
@@ -178,10 +198,7 @@ main{
 
 
 }
-.input{
-  /* margin: 0 24px 0 24px; */
 
-}
 .text-transparent {
   color: transparent;
 }
@@ -191,7 +208,6 @@ button{
   padding: 20px 15px;
   font-weight: 600;
   border: 1px solid black;
-  
   cursor: pointer;
 
 }
@@ -272,12 +288,22 @@ button:hover{
   justify-content: center;
   align-items: center;
   padding: 10px 15px;
+  gap:10px;
+  color: #ffff;
   background-color:rgb(175, 225, 165) ;
-  width: 200px;
+  width: 250px;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0 24px 24px 0;
+}
+.btnss{
+  display: flex;
+ align-items: center;
+
+  justify-content: center;
+  
+
 }
 .err{
   display: flex;
@@ -296,7 +322,7 @@ button:hover{
 .btn{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 
@@ -375,6 +401,11 @@ span{
    
     animation: moveUpDown 1.3s ease-in-out infinite alternate;
   }
+  .relative{
+    position: absolute;
+    bottom: 0;
+   left: 40%;
+  }
   
   /* Keyframes for moving up and down animation */
   @keyframes moveUpDown {
@@ -401,6 +432,7 @@ span{
   flex-direction: column;
   margin-left: 20px;
   margin-right: 40px;
+  margin-top: 100px;
  
 
  }
@@ -423,6 +455,7 @@ span{
 
  
 }
+
 .butt{
   font-size: 13px;
 }

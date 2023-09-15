@@ -35,6 +35,7 @@ export default function Home() {
           />
           <span className="hea">Solana.Finance</span>
         </div>
+        
        
       </header>
 
@@ -42,13 +43,13 @@ export default function Home() {
 
       <div className='conta'>
         <div className='flex'>
-        <p className='co text text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mb-4'>Speed up your Crypto payments </p>
+        <p className='co text text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mb-4'>Simplyfying Solana payments </p>
 
-<p className='container'>Making Simple Point of serivce (POS) for making Solana (SOL) cryptocurrency payments using a scan-to-pay mechanism.</p>
+<p className='container'>Creating a simple Point of serivce (POS) for making Solana (SOL)  payments using a scan-to-pay mechanism.</p>
 
  
 
-
+<div className='nn'>
 <button className='cntbtn'>
   <Link href='/payment'>Test Demo</Link>
         
@@ -59,15 +60,20 @@ export default function Home() {
   </button>
 
 
+</div>
+
+
         </div>
+        
      <div className='flex im animated-element'>
-     <Image
-            src="/cat.png" // Path to the image in the public directory
+     {/* <Image
+            src="/solpay.png" // Path to the image in the public directory
             alt="My Image"
-            width="630"
+            width="330"
             height="0"
             className=""
           />
+   */}
 
      </div>
        
@@ -87,11 +93,27 @@ export default function Home() {
 <path d="M7.99609 10.6667H8.00208" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></p>
          </div>
+         
          </div>
       }
      
 
-       
+     <div className="relative footer mb-40 mt-40 flex items-center justify-center text-black">
+              <Image
+                src="/logo.png" // Path to the image in the public directory
+                alt="My Image"
+                width="150"
+                height="0"
+                className="image"
+              />
+              <Image
+                src="/phan.png" // Path to the image in the public directory
+                alt="My Image"
+                width="100"
+                height="0"
+                className="image"
+              />
+            </div>
         
     </div>
   )
