@@ -55,7 +55,7 @@ export default function Home() {
         
   </button>
   <button className='cntbtn tip' onClick={openPopup}>
-   Mint cNFT 🤑
+    Tip 🤑
         
   </button>
 
@@ -66,14 +66,14 @@ export default function Home() {
         </div>
         
      <div className='flex im animated-element'>
-     {/* <Image
+     <Image
             src="/solpay.png" // Path to the image in the public directory
             alt="My Image"
             width="330"
             height="0"
             className=""
           />
-   */}
+  
 
      </div>
        

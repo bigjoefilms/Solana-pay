@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 .hea{
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
 
 }
@@ -404,7 +404,8 @@ span{
   .relative{
     position: absolute;
     bottom: 0;
-   left: 40%;
+   left: -50%;
+   right: -50%;
   }
   
   /* Keyframes for moving up and down animation */
@@ -422,7 +423,7 @@ span{
 }
 .relative{
   display: flex;
-
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   color: black;

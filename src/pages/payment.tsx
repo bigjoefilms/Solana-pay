@@ -26,7 +26,7 @@ require("@solana/wallet-adapter-react-ui/styles.css");
 export default function Payment() {
   const [walletAddress, setWalletAddress] = useState<string | null>(null);
   const [amount, setAmount] = useState<BigNumber>();
-  const [verificationStatus, setVerificationStatus] = useState(false);
+  const [verificationStatus, setVerificationStatus] = useState<boolean>(false)
   const [error, setError] = useState("");
   const [amountToString, setAmountToString] = useState("");
   const [balance, setBalance] = useState<number | null>(null);
@@ -73,8 +73,9 @@ export default function Payment() {
   };
   const goBack = () => {
     setIsQRVisible(false);
+    setVerificationStatus(false);
   };
-  const Back = () => {
+  const setBack = () => {
     setVerificationStatus(false);
   };
  
@@ -103,6 +104,7 @@ export default function Payment() {
     connectWallet();
   }, [wallets]);
 
+
   useEffect(() => {
     if (walletAddress !== null) {
       const fetchBalance = async () => {
@@ -113,10 +115,12 @@ export default function Payment() {
           newBalance = newBalance / LAMPORTS_PER_SOL;
 
           if (balance !== null && newBalance !== balance) {
-            // The balance has changed
-            setVerificationStatus(true);
-          }
+           
+            alert(`Transaction confirmed: ${newBalance}`);
 
+           
+          }
+        
           setBalance(newBalance);
           console.log(`Wallet Balance: ${newBalance}`);
 
@@ -125,6 +129,7 @@ export default function Payment() {
           console.error("Error fetching balance:", error);
         }
       };
+     
       fetchBalance();
       const intervalId = setInterval(fetchBalance, 1000);
       return () => clearInterval(intervalId);
@@ -132,7 +137,7 @@ export default function Payment() {
   }, [walletAddress, balance]);
 
   return (
-    <>
+  
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletModalProvider>
@@ -179,10 +184,10 @@ export default function Payment() {
                       <path
                         d="M14.9998 19.9201L8.47984 13.4001C7.70984 12.6301 7.70984 11.3701 8.47984 10.6001L14.9998 4.08008"
                         stroke="#292D32"
-                        stroke-width="1.5"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                     <p>Go Back</p>
@@ -373,8 +378,9 @@ export default function Payment() {
                 </div>
               )}
             </main>
+            <div onClick={setBack}>
             {verificationStatus && (
-              <div className="trans">
+              <div className="trans"  >
                 <svg
                   width="16"
                   height="16"
@@ -414,15 +420,16 @@ export default function Payment() {
                 Transaction Confirmed   
                 <div
               
-                className="py-[8px] px-[16px]  text-black flex items-center h-[40px] cursor-pointer"
-                onClick={Back}
+                className="py-[8px] px-[16px] th text-black flex items-center h-[40px] cursor-pointer"
+               
               >
-                <svg
+               <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
-                  height="0"
+                  height="30"
                   viewBox="0 0 41 40"
                   fill="none"
+                 
                 >
                   <rect
                     x="0.617188"
@@ -439,6 +446,9 @@ export default function Payment() {
               </div>
               </div>
             )}
+
+            </div>
+           
             {error && <p className="err">{error}</p>}
 
             <div className="relative mb-40 mt-40 flex items-center justify-center text-black">
@@ -460,6 +470,6 @@ export default function Payment() {
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
-    </>
+  
   );
 }
