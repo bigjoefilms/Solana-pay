@@ -50,10 +50,11 @@ export default function Home() {
  
 
 <div className='nn'>
+<Link href='/payment'>
 <button className='cntbtn'>
-  <Link href='/payment'>Test Demo</Link>
+  Test Demo
         
-  </button>
+  </button></Link>
   <button className='cntbtn tip' onClick={openPopup}>
     Tip 🤑
         
@@ -78,6 +79,8 @@ export default function Home() {
      </div>
        
       </div>
+
+      
       {
         pop && <div className='rela'><div className='cover'>
          

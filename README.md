@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About Build
 
-## Getting Started
+In this project, I created a simple web page for making Solana (SOL) cryptocurrency payment
+using a scan-to-pay mechanism.
 
-First, run the development server:
+# Problems
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. **Complexity of Cryptocurrency Payments:** Traditional cryptocurrency payment methods often require users to copy and paste complex wallet addresses, deal with fluctuating transaction fees, and navigate through different blockchain networks. This complexity can deter mainstream adoption.
+2. **Transaction Delays:** In some blockchain networks, transaction confirmations can take several minutes or even hours, making cryptocurrency payments impractical for real-time use cases, such as point-of-sale transactions or quick peer-to-peer transfers.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Project Solution
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Efficient Payments:** Solana's blockchain architecture enables near-instant transaction confirmations and high throughput, making it suitable for real-time payments.
+- **User-Friendly Interface:** Our scan-to-pay page provides an intuitive interface where users can scan QR codes to initiate Solana payments. This eliminates the need to manually enter complex wallet addresses.
+- Therefore simplifying cryptocurrency payments and harnessing Solana's capabilities, the solution aims to make digital currency more accessible and convenient for users and businesses alike. It addresses the challenges associated with traditional payment methods and contributes to the broader adoption of cryptocurrencies in everyday transactions.
+- Implemented a mechanism to listen for transaction confirmation events.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Visit Site
 
-## Learn More
+[Solana.Finance](https://solana-pay-store-six.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+# Figma file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://www.figma.com/file/d1AwftfGWTBWx6OQnJpWa2/SuperTeam.ng-bounty?type=design&node-id=0%3A1&mode=design&t=pSqZvJxTIoOjlRjK-1
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# video Link
 
-## Deploy on Vercel
+[nobi.js🧱🌐 on Twitter](https://x.com/AbanobiJoseph/status/1702779025196806343?s=20)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Code
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://github.com/bigjoefilms/Solana-pay
