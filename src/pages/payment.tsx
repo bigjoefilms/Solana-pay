@@ -33,7 +33,7 @@ export default function Payment() {
   const reference = useMemo(() => Keypair.generate().publicKey, []);
   const [isQRVisible, setIsQRVisible] = useState(false);
   const QUICKNODE_RPC =
-    "https://few-cool-water.solana-devnet.discover.quiknode.pro/34694b75986a1c86677328b2f079135fbc1a538c/";
+    "https://sparkling-stylish-shape.solana-testnet.quiknode.pro/c10f759301e6bfc21154d68d109b860207d3088e/";
   const SOLANA_CONNECTION = new Connection(QUICKNODE_RPC);
   const network = WalletAdapterNetwork.Devnet;
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
