@@ -24,8 +24,9 @@ using a scan-to-pay mechanism.
 https://www.figma.com/file/d1AwftfGWTBWx6OQnJpWa2/SuperTeam.ng-bounty?type=design&node-id=0%3A1&mode=design&t=pSqZvJxTIoOjlRjK-1
 
 # video Link
+youtube 
 
-[nobi.js🧱🌐 on Twitter](https://x.com/AbanobiJoseph/status/1702779025196806343?s=20)
+https://www.youtube.com/watch?v=G1naxQh-1gE
 
 # Code
 
