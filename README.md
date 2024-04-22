@@ -17,7 +17,7 @@ using a scan-to-pay mechanism.
 
 # Visit Site
 
-[Solana.Finance](https://solana-pay-store-six.vercel.app/)
+[Solana.Finance](https://solana-f1cxclxq7-bigjoefilms-projects.vercel.app/)
 
 # Figma file
 
