@@ -25,4 +25,5 @@
 
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "solana.js"],
   "exclude": ["node_modules"]
+  
 }

@@ -12,6 +12,7 @@ const Wallet = () => {
   const wallets = useMemo(() => [getPhantomWallet()], []);
 
   return (
+    
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
@@ -20,6 +21,7 @@ const Wallet = () => {
       </WalletProvider>
     </ConnectionProvider>
   );
+
 };
 
 export default Wallet;
